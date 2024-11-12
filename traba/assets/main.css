@@ -1,0 +1,61 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  body {
+    display: grid;
+    grid-template-rows: 100px 1fr 50px;
+    height: 100vh;
+    background-color: darkslategrey;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+    justify-content: center;
+    column-gap: 2vw;
+  }
+
+  header a {
+    color:#979797;
+    background-color: #231e29e3;
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+
+  main .message {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    max-width: 50%;
+    background-color: gray;
+    color: #E0E0E0;
+    min-width: 300px;
+  }
+
+  main .message .time {
+    margin: .5rem 0 0 0;
+    padding: .5rem 0 0 0;
+    color:white;
+   
+  }
+  
+  main .message.owner {
+    justify-self: end;
+    background-color: blue;
+    color: #E0E0E0;
+  }
+  
+  footer  {
+    display: grid;
+    width:60vw;
+    justify-self: center;
+    grid-template-columns: 1fr auto;
+    column-gap: 1vw;
+  }
